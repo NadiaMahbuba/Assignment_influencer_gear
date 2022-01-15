@@ -66,6 +66,7 @@ transition: ease-out 0.5s;
 width:100%;
 background-image: url("images/Circle\ design.svg");
 background-repeat: no-repeat;
+background-position: center;
 }
 .half-right:hover img{
     background-color: #E02C6D;
@@ -245,15 +246,16 @@ grid-template-columns: repeat(1,1fr);
         font-size: 14px;
         flex-wrap: wrap;
     }
-    .half-right{
+    .half-right img{
         width: 257px;
         height: 257px;
         order:1;
         /* flex-direction: column; */
         display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 100px;
+  /* margin-right: auto; */
   background-size:257px ;
+  /* text-align: center; */
     }
     .popular-collection{
         
@@ -295,4 +297,73 @@ flex-direction: column;
     height: 211px;
     padding: 10px;
 }
+}
+/* --------------
+media queries----
+------------------ */
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+header{
+    width: 100%;
+    /* height:800px;  */
+    text-align: center; 
+    flex-wrap: wrap;
+    
+}
+ header h3{
+    font-size: 20px;
+    margin:40px;
+    text-align: center;
+}
+    .influencer-journey{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    .half-right{
+        width: 50%;
+        order:1;
+        flex-direction: column;
+    }
+    .half-right img{
+       width:100%;
+         display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: 300px;
+ background-position: center;
+ }
+    .half-left{
+        order:2;
+        display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+    } 
+    .products{
+        grid-template-columns: repeat(2,1fr);
+    column-gap: 50px; 
+    flex-wrap: wrap;
+    display:flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .popular-collection{
+        width:100%;
+        margin:auto;
+        height:2600px;
+    }
+    .join_group{
+        width:100%;
+        height:550px;
+    }
+    .half-width-left img{
+       width: 200px; 
+       height:300px;
+       float:left;
+
+    }
+    .bottom{
+        width:950px;
+        height:250px;
+    }
 }
