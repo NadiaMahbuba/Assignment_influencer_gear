@@ -240,6 +240,11 @@ grid-template-columns: repeat(1,1fr);
     .half-left h1{
         font-size: 28px;
     }
+    .half-left p{
+        font-size: 14px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
     .half-right{
         width:100%;
         order:1;
