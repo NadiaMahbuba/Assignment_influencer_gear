@@ -243,7 +243,6 @@ grid-template-columns: repeat(1,1fr);
     .half-left p{
         font-size: 14px;
         flex-wrap: wrap;
-        text-align: center;
     }
     .half-right{
         width:100%;
@@ -254,15 +253,13 @@ grid-template-columns: repeat(1,1fr);
         
         width: 329px;
  height: 4700px;
-/* width:100%; */
+
 
     }
     .popular-collection h3{
         font-size: 16px;
     }
     .group_info{
-        /* display:grid; */
-        /* grid-template-columns: repeat(1,1fr);   */
         flex-direction: column;
         margin: auto;
     }
@@ -275,11 +272,6 @@ grid-template-columns: repeat(1,1fr);
     column-gap: 0;
     flex-wrap: wrap;
 }
-/* .half-width-left{
-    order:2;
- flex-direction: column;
-   padding: 10px 0;
-} */
 .half-width-left{
     display: block;
     margin-left: auto;
@@ -288,7 +280,6 @@ grid-template-columns: repeat(1,1fr);
 }
 .half-width-right{
     order:1;
-    /* padding: 0; */
 text-align: center;
 flex-direction: column;
       
@@ -296,9 +287,6 @@ flex-direction: column;
 .bottom{
     width: 100%;
     height: 211px;
-    /* flex-wrap: wrap; */
-    /* text-align: center; */
-    /* margin: auto; */
     padding: 10px;
 }
 }
